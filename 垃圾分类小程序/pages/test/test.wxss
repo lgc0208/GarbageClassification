@@ -1,0 +1,41 @@
+/* pages/test/test.wxss */
+.buttontype1{
+
+  margin-bottom: 30px;
+  background-color: rgb(8, 138, 19);
+  color: white;
+  border-radius: 98rpx;
+
+}
+.buttontype2{
+  
+  margin-bottom: 30px;
+  background-color: rgb(8, 138, 19);
+  color: white;
+  border-radius: 98rpx;
+
+}
+page{
+  height:100%;
+}
+.background {
+  padding: 0rpx;
+  width: 100%;
+  height: 100%;
+  position:fixed; 
+ 
+  background-size:100% 100%;
+  z-index: -1;
+}
+.a{
+  margin-bottom: 40px;
+  text-align: center;
+}
+.b{
+  font-size: 40px;
+  text-align: center;
+}
+.c{
+  text-align: center;
+  margin: 20px;
+}

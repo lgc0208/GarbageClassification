@@ -1,0 +1,22 @@
+<!--index.wxml-->
+
+<view class="content">
+	<!--pics文件夹下的background.jpg文件-->
+	<image class='background' src="../../images/e.png" mode="aspectFill"></image>
+
+</view>
+
+<view class='p1'>
+  <image src="../../images/c.png" class='in-image'  mode = "aspectFit" >
+  </image>
+</view>
+
+<button class="buttontype1" bindtap="toTest">你知道吗</button>
+<view class='p1'>
+  <image src="../../images/d.png" class='in-image' mode = "aspectFit"  >
+  </image>
+</view>
+
+<button class="buttontype2" bindtap="toIdentify">我来帮你</button>
+
+

@@ -1,0 +1,67 @@
+/* pages/test/questionFirst/questionFirst.wxss */
+page{
+  height:100%;
+}
+.background {
+  padding: 0rpx;
+  width: 100%;
+  height: 100%;
+  position:fixed; 
+ 
+  background-size:100% 100%;
+  z-index: -1;
+}
+
+.buttontype{
+margin-top: 30px;
+  width: 80%;
+  background-color: rgb(8, 138, 19);
+  color: white;
+  border-radius: 98rpx;
+  background: bg_red;
+
+}
+
+.buttontypeone{
+
+  width: 80%;
+  background-color: rgb(37, 175, 111);
+  color: white;
+  border-radius: 98rpx;
+  background: bg_red;
+
+}
+.redbutton{
+margin-top: 30px;
+  width: 80%;
+  background-color:red;
+  color: white;
+  border-radius: 98rpx;
+  background: bg_red;
+
+}
+.greenbutton{
+margin-top: 30px;
+  width: 80%;
+  background-color: greenyellow;
+  color: white;
+  border-radius: 98rpx;
+  background: bg_red;
+
+}
+.graybutton{
+margin-top: 30px;
+  width: 80%;
+  background-color:gray;
+  color: white;
+  border-radius: 98rpx;
+  background: bg_red;
+}
+
+button[disabled] {
+
+    color: #fff !important;
+    background: gray !important;
+    border-color:gray !important;
+
+}

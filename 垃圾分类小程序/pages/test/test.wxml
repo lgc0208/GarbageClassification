@@ -1,0 +1,20 @@
+<!--pages/test/test.wxml-->
+<view class="content">
+	<!--pics文件夹下的background.jpg文件-->
+	<image class='background' src="../../images/e.png" mode="aspectFill"></image>
+
+</view>
+<view class="a">垃圾分类</view>
+<view class="b">知识环保答题</view>
+<view class="c">“科学分类，保护环境”</view>
+<text>这里给大家一些小提示~
+可回收垃圾通常是可以区分的啦
+另外三种垃圾为干垃圾 湿垃圾 和有害垃圾
+一个简单粗暴的区分方法是
+猪可以吃的是湿垃圾
+猪不可以吃的是干垃圾
+猪吃了会生病的就是有害垃圾啦
+祝大家取得好成绩哦~
+</text>
+<button class='buttontype1' bindtap='toFirstQuestion'>测试一</button>
+<button class='buttontype2' bindtap='toSecondQuestion'>测试二</button>

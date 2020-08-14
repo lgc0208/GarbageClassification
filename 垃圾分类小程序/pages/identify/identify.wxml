@@ -1,0 +1,11 @@
+<!--pages/identify/identify.wxml-->
+
+<view class="content">
+	<!--pics文件夹下的background.jpg文件-->
+	<image class='background' src="../../images/a.png" mode="aspectFill"></image>
+
+</view>
+<view class="a">垃圾分类</view>
+<view class="b">我来帮你识别垃圾</view>
+<button class='buttontype' bindtap='toTextIdentify'>文字识别</button>
+<button class='buttontype' bindtap='toImageIdentify'>图像识别</button>

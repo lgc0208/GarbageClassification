@@ -1,0 +1,57 @@
+<!--pages/identify/imageIdentify/imageIdentify.wxml-->
+<view class="content">
+	<!--pics文件夹下的background.jpg文件-->
+	<image class='background' src="/images/a.png" mode="aspectFill"></image>
+  <view class="a">垃圾分类</view>
+  <view class="b">拍照识别垃圾</view>
+  <view class="c">“科学分类，保护环境”</view>
+
+<!-- 识别精确度选择 -->
+  <radio-group class="radio-group" bindchange="radioChange" >
+  <label style="display: flex" wx:for="{{items}}" wx:key="{{item.name}}">
+    <radio value="{{item.name}}" checked="{{item.checked}}" />
+    {{item.value}}
+  </label>
+  </radio-group>
+
+  <!-- 添加图像后显示图像 -->
+  <view class="photo-add">
+    <view class="page-body-info">
+        <block wx:if="{{img}}">
+         <view class="image-box">
+          <image src="{{img}}" class="video" bindtap="chooseImage"></image> 
+          </view>     
+        </block>
+        <block wx:else>
+          <view class="image-plus-text" bindtap="chooseImage">点击该处添加图像</view>
+        </block>
+     </view>
+<view style="margin-top: {{margintop}}rpx;">
+  <view class="title">识别结果</view>
+    <view class="weui-cells">
+      <view class="weui-cell">
+          <view class="weui-cell__bd">
+            <view wx:for="{{bindSource}}"> <!-- 循环输出所有数据 -->
+              <view id="{{index}}" bindtap="query" class="weui-cells__title">
+               {{item.name}}<text>相似度：{{item.trust}}</text>
+                 <text wx:if="{{item.lajitype == 0}}">类型：可回收垃圾</text>
+                 <text wx:elif="{{item.lajitype == 1}}">类型：有害垃圾</text>
+                 <text wx:elif="{{item.lajitype == 2}}">类型：厨余（湿）垃圾</text>
+                 <text wx:elif="{{item.lajitype == 3}}">类型：其他（干）垃圾</text>
+              </view>
+<!-- API接口返回数据：  
+name	    string	  打火机	                                                                     识别物体名称
+trust	    int	      100	                                                                        可信度，单位百分比
+lajitype	int	      3	                                                                          垃圾分类，
+-                                                                              0为可回收、1为有害、2为厨余(湿)、3为其他(干)
+lajitip	  string  	打火机是其它干垃圾，常见包括砖瓦陶瓷、卫生间废纸、猫砂、毛发、一次性制品等......	垃圾分类提示
+ -->
+
+              </view>
+           </view>
+        </view>
+       </view>
+    </view>
+  </view>
+</view>
+

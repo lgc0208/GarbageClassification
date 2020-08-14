@@ -1,0 +1,42 @@
+<!--pages/test/questionSecond/questionSecond.wxml-->
+<view class="content">
+	<!--pics文件夹下的background.jpg文件-->
+	<image class='background' src="/images/b.png" mode="aspectFill"></image>
+
+</view>
+
+
+<button bindtap='toTestPage' class='buttontypeone'>返回上一层</button>
+
+
+<view> 请选择以下物品应属于的垃圾类别 </view>
+<view> 1.报纸 </view>
+<image src='/images/newspaper.jpg'></image>
+<button  bindtap='addOne' class='buttontype' hover-class="greenbutton" >可回收垃圾</button>
+<button bindtap='wrong' class='buttontype'hover-class="redbutton">有害垃圾</button>
+<button bindtap='wrong' class='buttontype' hover-class="redbutton">干垃圾</button>
+<button bindtap='wrong' class='buttontype' hover-class="redbutton">湿垃圾</button>
+<view> 2.鸡骨头 </view>
+<image src='/images/boneofchick.jpg'></image>
+<icon></icon>
+<button  bindtap='wrong' class='buttontype' hover-class="redbutton">可回收垃圾</button>
+<button bindtap='wrong' class='buttontype' hover-class="redbutton">有害垃圾</button>
+<button bindtap='wrong' class='buttontype' hover-class="redbutton">干垃圾</button>
+<button bindtap='addOne' class='buttontype'hover-class="greenbutton">湿垃圾</button>
+
+<view> 3. 电池</view>
+<image src='/images/batteria.jpg'></image>
+<button  bindtap='wrong' class='buttontype'hover-class="redbutton" >可回收垃圾</button>
+<button bindtap='addOne' class='buttontype'hover-class="greenbutton">有害垃圾</button>
+<button bindtap='wrong' class='buttontype'hover-class="redbutton">干垃圾</button>
+<button bindtap='wrong' class='buttontype'hover-class="redbutton">湿垃圾</button>
+<view> 4. 猪骨头</view>
+<image src='/images/boneofpig.jpg'></image>
+<button  bindtap='wrong' class='buttontype' hover-class="redbutton">可回收垃圾</button>
+<button bindtap='wrong' class='buttontype'hover-class="redbutton">有害垃圾</button>
+<button bindtap='addOne' class='buttontype'hover-class="greenbutton">干垃圾</button>
+<button bindtap='wrong' class='buttontype'hover-class="redbutton">湿垃圾</button>
+
+
+<button bindtap='toResultPage' class='buttontypeone' hover-class="graybutton">提交</button>
+

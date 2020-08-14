@@ -1,0 +1,20 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/test/test",
+    "pages/test/questionFirst/questionFirst",
+    "pages/test/questionSecond/questionSecond",
+    "pages/test/result/result",
+    "pages/identify/identify",
+    "pages/identify/textIdentify/textIdentify",
+    "pages/identify/imageIdentify/imageIdentify"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "我丢！！！",
+    "navigationBarTextStyle":"black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
