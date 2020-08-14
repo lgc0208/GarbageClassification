@@ -1,0 +1,2 @@
+# GarbageClassification
+基于微信小程序的垃圾分类小程序_支持文字、图像识别
